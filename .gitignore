@@ -1,0 +1,55 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+hpc_ids
+baseline_collector
+energy_monitor
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Generated files
+*.log
+*.jsonl
+
+# Build directories
+build/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Perf data files
+perf.data*
+
+# Configuration backups
+*.json.bak
+
+# Log files
+logs/*.log
+logs/*.jsonl
+
+# Baseline files (optional - uncomment if you don't want to commit baselines)
+# baselines/*.json
+
+# Test results
+test_results/
+experiment_results/

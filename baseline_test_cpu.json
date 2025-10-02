@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "application_name": "test_cpu",
+    "collection_timestamp": "2025-10-02T15:47:04",
+    "runs_executed": 3,
+    "samples_collected": 6,
+    "events": ["cycles", "instructions", "branches", "branch-misses", "cache-references", "cache-misses", "L1-dcache-loads", "L1-dcache-load-misses", "iTLB-loads", "iTLB-load-misses", "dTLB-loads", "dTLB-load-misses", "cpu-clock"],
+    "config": {
+      "sampling_interval_ms": 200,
+      "core_affinity": 0
+    }
+  },
+  "baseline_statistics": {
+    "ipc": {
+      "median": 0.882793090096921,
+      "mad": 0.024949471717899,
+      "method": "robust_median_mad",
+      "min": 0.851483077614362,
+      "max": 0.915285919045693,
+      "samples": 6
+    },
+    "branch_miss_rate": {
+      "median": 0.001854995382451,
+      "mad": 0.000198765640914,
+      "method": "robust_median_mad",
+      "min": 0.001303090383480,
+      "max": 0.002148538293411,
+      "samples": 6
+    },
+    "cache_miss_rate": {
+      "median": 0.292123499842286,
+      "mad": 0.028491793731894,
+      "method": "robust_median_mad",
+      "min": 0.231672010942475,
+      "max": 0.360373301614895,
+      "samples": 6
+    },
+    "l1d_mpki": {
+      "median": 0.148151856692291,
+      "mad": 0.012728517695987,
+      "method": "robust_median_mad",
+      "min": 0.127814439651785,
+      "max": 0.184253584038774,
+      "samples": 6
+    },
+    "itlb_mpki": {
+      "median": 0.000477437389600,
+      "mad": 0.000199812131489,
+      "method": "robust_median_mad",
+      "min": 0.000197319166832,
+      "max": 0.001637178926988,
+      "samples": 6
+    },
+    "dtlb_mpki": {
+      "median": 0.004599301732897,
+      "mad": 0.001218603223515,
+      "method": "robust_median_mad",
+      "min": 0.002620981171345,
+      "max": 0.009168201991133,
+      "samples": 6
+    }
+  }
+}

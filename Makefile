@@ -23,10 +23,10 @@ CORE_OBJECTS = $(CORE_SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 # Main targets
 .PHONY: all clean install help
 
-all: hpc_ids baseline_collector energy_monitor
+all: hpc_ids baseline_collector energy_monitor test_cpu test_memory
 
 # Main HPC-IDS binary
-hpc_ids: $(CORE_OBJECTS) $(OBJDIR)/hpc_ids_main.o
+hpc_ids: $(CORE_OBJECTS) $(OBJDIR)/baseline_collector.o $(OBJDIR)/hpc_ids_main.o
 	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
 
 # Baseline collector utility
@@ -41,11 +41,18 @@ energy_monitor: $(CORE_OBJECTS) $(OBJDIR)/energy_monitor.o
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
+# Test programs
+test_cpu: test_cpu.c
+	$(CC) $(CFLAGS) -o $@ $<
+
+test_memory: test_memory.c
+	$(CC) $(CFLAGS) -o $@ $<
+
 # Clean build artifacts
 clean:
 	rm -rf $(OBJDIR)
-	rm -f hpc_ids baseline_collector energy_monitor
-	rm -f *.log *.jsonl
+	rm -f hpc_ids baseline_collector energy_monitor test_cpu test_memory
+	rm -f *.log *.jsonl *.json
 
 # Install system-wide (requires sudo)
 install: all

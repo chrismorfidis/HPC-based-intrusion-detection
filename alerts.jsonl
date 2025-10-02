@@ -1,0 +1,6 @@
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"ipc","measured_value":0.739002,"baseline_median":0.000000,"robust_z_score":739001849.782,"threshold":5.0,"severity":"critical"}
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"branch_miss_rate","measured_value":0.036915,"baseline_median":0.000000,"robust_z_score":36915001.476,"threshold":5.0,"severity":"critical"}
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"cache_miss_rate","measured_value":0.243571,"baseline_median":0.000000,"robust_z_score":243570541.290,"threshold":5.0,"severity":"critical"}
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"l1d_mpki","measured_value":12.093786,"baseline_median":0.000000,"robust_z_score":12093786296.060,"threshold":5.0,"severity":"critical"}
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"itlb_mpki","measured_value":0.085557,"baseline_median":0.000000,"robust_z_score":85556548.585,"threshold":5.0,"severity":"critical"}
+{"timestamp":1759420184,"application_name":"system","baseline_type":"global","feature":"dtlb_mpki","measured_value":0.825228,"baseline_median":0.000000,"robust_z_score":825228418.308,"threshold":5.0,"severity":"critical"}
